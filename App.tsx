@@ -1,10 +1,11 @@
 import React from 'react';
-import {Text, View, StyleSheet} from 'react-native';
+import {View, StyleSheet} from 'react-native';
+import TextItem from './components/TextItem';
 
 function App() {
   return (
     <View style={styles.container}>
-      <Text>Hello world from React Naitve Web</Text>
+      <TextItem text="Hello world from React Naitve Web" />
     </View>
   );
 }
