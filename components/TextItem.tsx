@@ -1,12 +1,16 @@
 import React, {FC} from 'react';
-import {Text} from 'react-native';
+import styled from 'styled-components/native';
 
 interface Props {
   text: string;
 }
 
 const TextItem: FC<Props> = ({text}) => {
-  return <Text>{text}</Text>;
+  return <StyledText>{text}</StyledText>;
 };
+
+const StyledText = styled.Text`
+  font-size: 20px;
+`;
 
 export default TextItem;
